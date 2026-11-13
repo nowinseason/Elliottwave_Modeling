@@ -155,16 +155,16 @@ class monowave:
             lower_angle = round(math.degrees(math.atan(abs(mono_change) / lower_limit)), 1)
 
             if self.mono618 < abs(mono_return):
+                for key in range(start_idx, new_idx + 1):
+                    self.direction[key] = "Non-Dir"
+            else:
                 if angle <= upper_angle and angle >= lower_angle:
                     for key in range(start_idx, new_idx):
                         self.direction[key] = "Dir"
                 else:
                     for key in range(start_idx, new_idx):
-                        self.direction.setdefault(key, "Non-Dir")
-                self.direction[new_idx] = "Non-Dir"
-            else:
-                for key in range(start_idx, new_idx + 1):
-                    self.direction[key] = "Dir"
+                        self.direction.setdefault(key, "Dir")
+                self.direction[new_idx] = "Dir"
 
     def rule_of_neurality(self, label):
         """
