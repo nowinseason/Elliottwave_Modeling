@@ -2,6 +2,8 @@
 
 An algorithmic Python implementation and interactive **Streamlit + Plotly** visualization of **Glenn Neely's *Mastering Elliott Wave* (Version 2.0, Chapter 3: Preliminary Analysis)**.
 
+🚀 **Live Interactive Web App:** [https://elliottwavemodeling-han.streamlit.app](https://elliottwavemodeling-han.streamlit.app)
+
 ## Overview & 5-Stage Pipeline
 
 Unlike subjective chart-pattern guessing, Glenn Neely's method formalizes Elliott Wave analysis into a strict, sequential deductive pipeline:
